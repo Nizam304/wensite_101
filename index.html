@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" />
+		<title>The Budding Crafts</title>
+	</head>
+
+	<body>
+		<div class="grid-container">
+			<header class="header">
+				<div class="brand">
+					<button onClick="openMenu()">
+						&#9776;
+					</button>
+					<a href="index.html">The Budding Crafts</a>
+				</div>
+				<div class="header-links">
+					<a href="cart.html">Cart</a>
+					<a href="signin.html">Sign In</a>
+				</div>
+			</header>
+			<aside class="sidebar">
+				<h3>Our Services</h3>
+				<button class="sidebar-close-button" onclick="closeMenu()">x</button>
+				<ul>
+					<li>
+						<a href="index.html">Rakhi</a>
+					</li>
+
+					<li>
+						<a href="index.html">Ear Wear</a>
+					</li>
+					<li>
+						<a href="index.html">Home Decor</a>
+					</li>
+					<li>
+						<a href="index.html">Events</a>
+					</li>
+				</ul>
+			</aside>
+			<main class="main">
+				<div class="content">
+					<ul class="products">
+					<li>
+						<div class="product">
+							<img class="product-image" src="images/Rakhi.jpg" alt="products">
+							<div class="product-name">
+								<a href="rakhi.html">Rakhi</a>
+							</div>
+							<div class="product-brand">The Budding Crafts</div>
+							<div class="product-price">Rs.200 </div>
+							<div class="product-ratings">4.5 Stars (10 Reviews)</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<img class="product-image" src="images/ear_wear.jpg" alt="products">
+							<div class="product-name">
+								<a href="rakhi.html">Ear Wear</a>
+							</div>
+							<div class="product-brand">The Budding Crafts</div>
+							<div class="product-price">Rs.200 </div>
+							<div class="product-ratings">4.5 Stars (10 Reviews)</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<img class="product-image" src="images/home_decor.jpg" alt="products">
+							<div class="product-name">
+								<a href="rakhi.html">Home Decor</a>
+							</div>
+							<div class="product-brand">The Budding Crafts</div>
+							<div class="product-price">Rs.200 </div>
+							<div class="product-ratings">4.5 Stars (10 Reviews)</div>
+						</div>
+					</li>
+					<li>
+						<div class="product">
+							<img class="product-image" src="images/events.jpg" alt="products">
+							<div class="product-name">
+								<a href="rakhi.html">Events</a>
+							</div>
+							<div class="product-brand">The Budding Crafts</div>
+							<div class="product-price">Rs.200 </div>
+							<div class="product-ratings">4.5 Stars (10 Reviews)</div>
+						</div>
+					</li>
+					</ul>
+				</div>
+
+			</main>
+			<footer class="footer">
+				All right reserved.
+			</footer>
+		</div>
+		<script>
+			function openMenu(){
+				document.querySelector(".sidebar").classList.add("open")
+			}
+			function closeMenu(){
+				document.querySelector(".sidebar").classList.remove("open")
+			}
+		</script>
+	
+	</body>
+</html>
